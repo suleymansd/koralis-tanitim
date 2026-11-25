@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Koralis Sans";
+  font-family: "Izkovan Sans";
   src: url("./plex.woff2") format("woff2");
   font-style: normal;
   font-weight: 100 700;
@@ -21,7 +21,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 26px; }
 html[data-motion="off"] { scroll-behavior: auto; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.52 "Koralis Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.52 "Izkovan Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, p, figure, dl, dd { margin: 0; }
 a { color: inherit; text-decoration: none; }
 button { color: inherit; font: inherit; border: 0; cursor: pointer; }
@@ -34,8 +34,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .mast { position: relative; z-index: 5; background: #121619; color: #f6f5ef; border-bottom: 1px solid #ffffff26; }
 .mast-inner, .brand, .mast-tools, #navigation, .nav-files, .hero-actions, .kicker, .primary, .text-link, .image-note, .footer-inner { display: flex; align-items: center; }
 .mast-inner { min-height: 75px; gap: 25px; }
-.brand { gap: 10px; width: fit-content; font-size: 26px; font-weight: 650; line-height: 1; letter-spacing: .125em; }
-.brand img { display: block; }
+.brand { width: fit-content; min-height: 44px; flex: 0 0 auto; }
+.brand img { display: block; width: 166px; height: auto; }
 #navigation { margin-left: auto; gap: clamp(22px, 3vw, 49px); }
 #navigation a { font-size: 14px; color: #d0d2ce; }
 #navigation a:hover, #navigation a:focus-visible { color: white; }
@@ -121,7 +121,7 @@ h1 .line > span { display: inline-block; }
 .facts { border-block: 1px solid var(--line); padding: 12px 0; margin-block: 20px 14px; }
 .facts div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-block: 3px; }
 .facts dt { font-size: 14px; color: #50595a; }
-.facts dd { font: 550 14px/1.45 "Koralis Sans", Arial, sans-serif; text-align: right; font-variant-numeric: tabular-nums; }
+.facts dd { font: 550 14px/1.45 "Izkovan Sans", Arial, sans-serif; text-align: right; font-variant-numeric: tabular-nums; }
 #reason { font-size: 14px; }
 #details { margin-top: 17px; font-size: 14px; }
 #details summary { cursor: pointer; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; width: fit-content; }
@@ -144,7 +144,7 @@ h1 .line > span { display: inline-block; }
 .file-list a:hover .file-icon { color: #1b1d1c; background: var(--red); border-color: var(--red); }
 footer { background: #121619; color: #c4c7c4; }
 .footer-inner { min-height: 76px; gap: 30px; }
-footer .brand { color: #efefeb; font-size: 17px; gap: 6px; }
+footer .brand img { width: 125px; }
 .footer-version, .back { font-size: 12px; }
 .footer-version b { font-weight: 400; color: #77807e; margin-inline: 6px; }
 .back { margin-left: auto; }
@@ -176,8 +176,8 @@ footer .brand { color: #efefeb; font-size: 17px; gap: 6px; }
 @media (max-width: 760px) {
   :root { --frame: calc(100% - 40px); }
   .mast-inner { min-height: 62px; gap: 0; justify-content: space-between; }
-  .brand { font-size: 21px; gap: 6px; }
-  .brand img { width: 33px; height: 33px; }
+  .brand img { width: 138px; }
+  footer .brand img { width: 112px; }
   .mast-tools { padding: 0; border: 0; }
   .menu-btn { display: grid; }
   #navigation { display: none; align-items: stretch; position: absolute; top: 100%; left: 0; right: 0; background: #151a1d; padding: 8px 20px 16px; border-block: 1px solid #343b3d; }

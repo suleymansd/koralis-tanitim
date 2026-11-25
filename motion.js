@@ -8,14 +8,15 @@
   const menuButton = document.querySelector("[data-menu-toggle]");
   const hero = document.querySelector(".hero");
   const imageLayer = document.querySelector(".hero-image");
-  const preferenceKey = "koralis.showcase.motion";
+  const preferenceKey = "izkovan.showcase.motion";
   let paused = false;
   let enabled = false;
   let heroVisible = true;
   let scrollFrame = 0;
 
   try {
-    paused = localStorage.getItem(preferenceKey) === "off";
+    const saved = localStorage.getItem(preferenceKey) ?? localStorage.getItem("koralis.showcase.motion");
+    paused = saved === "off";
   } catch { /* File previews also work without local storage. */ }
 
   function paintImage() {
@@ -38,7 +39,7 @@
     motionButton.setAttribute("aria-pressed", String(enabled));
     motionButton.setAttribute("aria-label", label);
     motionButton.title = label;
-    document.dispatchEvent(new CustomEvent("koralis-motion", {detail: {enabled}}));
+    document.dispatchEvent(new CustomEvent("izkovan-motion", {detail: {enabled}}));
     paintImage();
   }
   motionButton.addEventListener("click", () => {
@@ -79,7 +80,7 @@
         {duration: 230, easing: "ease-out"});
     }
   });
-  document.addEventListener("koralis-motion", () => { if (!enabled && swap) swap.cancel(); });
+  document.addEventListener("izkovan-motion", () => { if (!enabled && swap) swap.cancel(); });
 
   function menu(open) {
     navigation.classList.toggle("open", open);

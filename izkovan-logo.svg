@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 64" width="312" height="64" role="img" aria-labelledby="title">
+  <title id="title">İzkovan</title>
+  <g transform="translate(0 1)">
+    <path fill="#F4F2E9" d="M3 32 17 8h43l-7 12H24l-7 12Z"/>
+    <path fill="#F4F2E9" d="M61 30 47 54H4l7-12h29l7-12Z"/>
+    <path fill="#FF674F" d="M20 37 27 25h17l-7 12Z"/>
+  </g>
+  <g fill="#F4F2E9" fill-rule="evenodd" transform="translate(76 19)">
+    <path transform="translate(0)" d="M0 0h6v32H0z M0-10h6v5.6H0z"/>
+    <path transform="translate(15)" d="M0 0h27.4v4.4L7.9 26.7h19.6V32H-.5v-4.4L19 5.3H0z"/>
+    <path transform="translate(51)" d="M0 0h6v13.4L20.4 0h8.1L12 15.3 29.2 32h-8.4L6 17.7V32H0z"/>
+    <path transform="translate(87.5)" d="M14.5-.55h3.9c9.1 0 13.25 4.85 13.25 13.45v6.2c0 8.6-4.15 13.45-13.25 13.45h-3.9C5.35 32.55 1.2 27.7 1.2 19.1v-6.2C1.2 4.3 5.35-.55 14.5-.55Zm.05 5.45c-5.25 0-7.25 2.9-7.25 8.15v5.9c0 5.2 2 8.15 7.25 8.15h3.8c5.2 0 7.2-2.95 7.2-8.15v-5.9c0-5.25-2-8.15-7.2-8.15Z"/>
+    <path transform="translate(126)" d="M0 0h6.75l10.4 25.35L27.65 0h6.55L20.25 32h-6.4Z"/>
+    <path transform="translate(159.5)" d="M0 32 14.3 0h6.25l14.3 32h-6.7l-3.3-7.65H9.8L6.45 32Zm12.05-13h10.5L17.3 6.75Z"/>
+    <path transform="translate(202.1)" d="M0 32V0h5.65l18.2 22.35V0h6V32H24.2L6 9.65V32Z"/>
+  </g>
+</svg>
